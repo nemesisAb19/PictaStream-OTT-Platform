@@ -110,7 +110,7 @@ Now, open http://localhost:3000 in your browser to use the platform.
 ![Image](https://github.com/user-attachments/assets/9e4cfba4-9093-40fd-bd30-a15cfeaf7cd5)
 
 ## Tech Stack
-- Frontend: React.js, Redux, Bootstrap
+- Frontend: React.js
 - Backend: Node.js, Express.js
 - Database: MongoDB
 - Authentication: JWT (JSON Web Tokens)
