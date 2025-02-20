@@ -1,0 +1,44 @@
+.view-more-must-watch {
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background color */
+    color: #1c1c1c; /* White text color */
+  }
+  
+  .view-more-must-watch h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .view-more-must-watch .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 60px;
+    /*background-color: #fff;*/
+  }
+  
+  .view-more-must-watch .movie-card {
+    /*width: 12%;*/
+    width: 18%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1c1c1c; /* Dark card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center;
+    color: #1c1c1c;
+  }
+  
+  .view-more-must-watch .movie-card img {
+    width: 250px;
+    height: 320px;
+    border-radius: 5px;
+  }
+  
+  .view-more-must-watch .movie-card h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+  }

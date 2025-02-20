@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 90px;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  backdrop-filter: blur(10px); /* Adds a minimal blur effect */
+  overflow: hidden;
+  /*transition: width 0.2s linear;*/
+  transition: width .3s ease; /* Smooth transition when expanding */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+  z-index: 1; /* Ensures it stays on top of other elements */
+}
+
+
+h1 {
+  padding-left: 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+span {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a {
+  position: relative;
+  display: table;
+  font-size: 14px;
+  padding: 10px;
+  width: 300px;
+  color: rgb(85, 83, 83);
+}
+
+.navIcon {
+  margin-top: 20px;
+}
+
+/* Style for links and icons in the navbar */
+nav a {
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+
+.fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  top: 14px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+.navIcon a:hover {
+  background: rgb(251, 246, 227);
+}
+
+nav:hover {
+  width: 280px;
+  transform: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #ff6600; /* Orange accent color on hover */
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}

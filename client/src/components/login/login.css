@@ -1,0 +1,277 @@
+/* General Styles for Register Section */
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cursive', sans-serif;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.0); /* Transparent background */
+    backdrop-filter: blur(10px); /* Adds a minimal blur effect */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+    max-width: 400px;
+    width: 100%;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.login-heading {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    /* display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: bold; */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Label animation on focus and when input has content */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    /* border-color: #ff6600;
+    outline: none; */
+    /* top: -10px;
+    font-size: 0.8rem; */
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+    color: #ff6600;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: -7px;
+    top: 48%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.password-icon:hover {
+    color: #ff6600;
+}
+  
+
+/* .form-group small {
+    font-size: 0.8rem;
+    color: #ff6600;
+} */
+
+/* .fa-info-circle {
+    margin-left: 10px;
+    color: #ff6600;
+    cursor: pointer;
+} */
+
+/* Style for small helper text */
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+}
+
+/* Input focus styles */
+.form-group input:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.login-button {
+    width: 80%;
+    margin-left: 50px;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.or-separator {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.social-button {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-button i {
+    margin-right: 8px;
+}
+
+.social-button:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+.terms-text, .login-text {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.terms-text a,
+.login-text a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.terms-text a:hover,
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {    
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .register-left {
+        margin-bottom: 40px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+/* Footer Styling */
+.footer-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    color: #f9f9f9;
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}

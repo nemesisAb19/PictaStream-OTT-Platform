@@ -1,0 +1,238 @@
+/* Home.css */
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    /*margin-left: 90px;*/ /* Matches the width of the collapsed navbar */
+  }
+
+  /*nav:hover ~ .home-container {
+    margin-left: 280px; /* Adjust content margin when navbar is expanded */
+  /*}*/
+  
+  .hero-section {
+    background: url('image_2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .hero-content {
+    text-align: center;
+    
+  }
+  
+  .hero-content h1 {
+    font-size: 5.5em;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.8em;
+    margin-top: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .features-carousel {
+    padding: 50px 0;
+    /*background-color: #fafafa;*/
+    background: linear-gradient(360deg, #001f3f, #000); /* Dark blue gradient */
+    text-align: center;
+  }
+  
+  .features-carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .carousel-block {
+    padding: 20px;
+    text-align: center;
+    width: 60%; /* Medium-sized width */
+    margin: 0 auto; /* Center the block */
+  }
+  
+  .carousel-image {
+    width: 50%;
+    height: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-left: 24.5%;
+  }
+  
+  .carousel-block h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .carousel-block p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #777;
+  }
+
+
+  /* Latest Releases Section */
+.latest-releases-section {
+  position: relative;
+  padding: 50px 0;
+  /*background-color: #f4f4f4;*/
+  background: linear-gradient(180deg, #001f3f, #000); /* Dark blue gradient */
+  text-align: center;
+}
+
+.latest
+{
+  position: relative;
+  padding: 50px 0;
+  /*background-color: #f4f4f4;*/
+  /*background: linear-gradient(360deg, #ffebc3, #ffffff);*/
+  background: linear-gradient(360deg, #001f3f, #000);
+  text-align: center;
+}
+
+.latest-releases-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.latest h2
+{
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.release-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.release-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.release-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Ensures consistent image size */
+  object-fit: cover;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/* Custom next/prev arrow styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #333;
+  z-index: 10; /* Ensure a higher z-index 
+  cursor: pointer;
+  display: block; /* Ensure it's displayed 
+}*/
+
+
+/* Custom next arrow styles */
+
+.custom-arrow:hover {
+  color: #ff6600; /* Highlight on hover */
+}
+
+/* Show arrows only on hover */
+.latest-releases-section:hover .custom-arrow {
+  display: block;
+}
+
+/* Style for next/prev arrow on hover */
+.slick-next:hover, .slick-prev:hover {
+  color: #ff6600;
+}
+
+.slick-next:hover, .slick-prev:hover {
+  color: #ff6600; /* Highlight on hover */
+}
+
+/* Show the arrows when hovering over the section */
+.latest-releases-section .slick-next,
+.latest-releases-section .slick-prev {
+  display: none; /*Hide arrows by default*/
+}
+
+.latest-releases-section:hover .slick-next,
+.latest-releases-section:hover .slick-prev {
+  display: block; /* Show arrows on hover */
+  z-index: 2; /* Ensure arrows are above other content */
+}
+
+/* Right side arrow for Movies page navigation */
+/*.movies-page-arrow {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+}*/
+
+.movies-page-arrow {
+  position: absolute;
+  top: 10%;
+  right: 20px; /* Ensure it's inside the viewport */
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  z-index: 10;
+}
+
+.movies-page-arrow:hover {
+  color: #ff6600; /* Highlight on hover */
+}
+
+/*.slick-prev:hover, .slick-next:hover {
+  color: #ff6600; //Change color on hover 
+}*/
+
+
