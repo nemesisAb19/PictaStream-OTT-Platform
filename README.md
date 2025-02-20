@@ -20,16 +20,27 @@ This project was developed as part of an **academic assignment** to demonstrate 
 
 ## 📂 Project Structure
 /PictaStream-OTT-Platform
+
 │── client/ # Frontend (React)
+
 │ ├── public/
+
 │ ├── src/
+
 │ ├── package.json
+
 │── server/ # Backend (Node.js, Express)
+
 │ ├── controllers/
+
 │ ├──model/
+
 │ ├── routes/
+
 │ ├── index.js
+
 │ ├── package.json
+
 │── README.md # Project documentation
 
 ## Installation & Setup  
