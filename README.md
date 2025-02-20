@@ -78,8 +78,6 @@ This project was developed as part of an **academic assignment** to demonstrate 
    - Start the React app:
      npm start
 
-
-
 Now, open http://localhost:3000 in your browser to use the platform.
 
 ## Screenshots
