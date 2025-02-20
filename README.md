@@ -44,22 +44,30 @@ This project was developed as part of an **academic assignment** to demonstrate 
 │── README.md # Project documentation
 
 ## Installation & Setup  
-### 1️⃣ **Clone the Repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/PictaStream-OTT-Platform.git
-cd PictaStream-OTT-Platform
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/PictaStream-OTT-Platform.git
+   cd PictaStream-OTT-Platform
 
-2️⃣ Backend Setup
-1. Navigate to the server folder:
-    cd server
+2. Backend Setup
+   - Navigate to the server folder:
+     cd server
+   - Install dependencies:
+     npm install
+   - Set up environment variables (.env file):
+     MONGO_URI=your_mongodb_connection
+     JWT_SECRET=your_secret_key
+     STRIPE_SECRET_KEY=your_stripe_key
+   - Start the backend server:
+     npm start
+      
+      
 2. Install dependencies:
-npm install
+
 3. Set up environment variables (.env file):
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
-STRIPE_SECRET_KEY=your_stripe_key
+
 4. Start the backend server:
-npm start
+
 
 3️⃣ Frontend Setup
 1. Navigate to the client folder:
