@@ -69,22 +69,16 @@ This project was developed as part of an **academic assignment** to demonstrate 
    - Start the backend server:
      
      npm start
-      
-      
-2. Install dependencies:
 
-3. Set up environment variables (.env file):
+3. Frontend Setup
+   - Navigate to the client folder:
+     cd ../client
+   - Install dependencies:
+     npm install
+   - Start the React app:
+     npm start
 
-4. Start the backend server:
 
-
-3️⃣ Frontend Setup
-1. Navigate to the client folder:
-cd ../client
-2. Install dependencies:
-npm install
-3. Start the React app:
-npm start
 
 Now, open http://localhost:3000 in your browser to use the platform.
 
