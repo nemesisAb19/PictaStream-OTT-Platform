@@ -51,14 +51,23 @@ This project was developed as part of an **academic assignment** to demonstrate 
 
 2. Backend Setup
    - Navigate to the server folder:
+     
      cd server
+     
    - Install dependencies:
+     
      npm install
+     
    - Set up environment variables (.env file):
+     
      MONGO_URI=your_mongodb_connection
+     
      JWT_SECRET=your_secret_key
+     
      STRIPE_SECRET_KEY=your_stripe_key
+     
    - Start the backend server:
+     
      npm start
       
       
